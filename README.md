@@ -1,6 +1,27 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Installation
+
+## Backend development workflow
+
+```json
+virtualenv env
+source env/bin/activate
+pip install -r requirements.txt
+python manage.py runserver
+```
+
+## Frontend development workflow
+
+```json
+npm i
+```
+
+## For deploying
+
+```json
+npm run build
+```
 
 In the project directory, you can run:
 

@@ -13,7 +13,8 @@ SECRET_KEY = 'tzya%e(rjqz+$+2r6k)61fk1i47_t-pe5e+chlwwdsho0s4!m7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["problemsolver-django-react-app.herokuapp.com"]
+# ALLOWED_HOSTS = ["problemsolver-django-react-app.herokuapp.com"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -131,7 +132,8 @@ REST_FRAMEWORK = {
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
         # 'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-        'rest_framework.permissions.AllowAny'
+        # 'rest_framework.permissions.AllowAny'
+        'rest_framework.authentication.TokenAuthentication',
     ]
 }
 
